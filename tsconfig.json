@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "target": "ES2015",
+    "moduleResolution": "node",
+    "esModuleInterop": true,                             /* Path module import*/
+    "baseUrl": ".",                                      /* Base directory to resolve non-relative module names. */
+    "paths": {                                           /* Set of entries that re-map imports to additional lookup locations. */
+      "@pages/*":["pages/pageRepository/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@lib/*":["lib/*"]
+    }
+  },
+  "include": ["./**/*.ts",
+    "node_modules/@types/node/module.d.ts"
+  ],
+  "exclude": [ "./dist", "./node_modules"]
+}
