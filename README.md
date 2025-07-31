@@ -59,5 +59,4 @@ To check report run command:
 
 ## Tests results
 
-![Screenshot 2025-07-31 at 22.28.02.png](..%2F..%2FDesktop%2FScreenshot%202025-07-31%20at%2022.28.02.png)
-
+![Screenshot.png](Screenshot.png)
