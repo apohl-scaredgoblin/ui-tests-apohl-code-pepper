@@ -20,7 +20,8 @@ By default application will run on `https://www.saucedemo.com/`
 
 ## Environment Variables
 
-To run tests, necessary environment variables must be set. You should define these variables in a `.env` file. You can use the `Sample.env` file present in the project as a boilerplate. 
+To run tests, necessary environment variables must be set. You should define these variables in a `.env` file. 
+You can use the `sample.env` file present in the project as a boilerplate.
 Please remove the Sample prefix,  there is no need to modify the values.
 The data within the file are public for simplicity. However, in real-world practice, 
 this file contains sensitive credentials and should not be included in version control.
