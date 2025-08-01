@@ -1,7 +1,7 @@
 {
   "name": "ui-tests-apohl-code-pepper",
   "version": "1.0.0",
-  "description": "",
+  "description": "UI tests in Playwright/Typescript for Code & Pepper",
   "main": "index.js",
   "scripts": {},
   "keywords": [],

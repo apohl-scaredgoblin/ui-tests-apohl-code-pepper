@@ -11,6 +11,8 @@ The tests are written in TypeScript and Playwright for browser automation
 ## Install
 
 - `npm install` - install dependencies
+- `npx playwright install` - install playwright                                             ║
+
 
 ## Important
 
@@ -25,9 +27,9 @@ this file contains sensitive credentials and should not be included in version c
 Therefore, the `.env `file has been added to .gitignore to prevent accidental pushes to the repository.
 
 ```
-BASE_URL:https://www.saucedemo.com/
-USERNAME=standard_user
-PASSWORD='secret_sauce'
+BASE_URL='https://www.saucedemo.com/'
+TEST_USERNAME='standard_user'
+TEST_PASSWORD='secret_sauce'
 ```
 
 ## Run all tests in Playwright 

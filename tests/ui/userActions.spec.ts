@@ -4,7 +4,7 @@ import process from "process";
 
 test.beforeEach(async ({ homePage, inventoryPage, context }) => {
   await homePage.navigateToURL();
-  await homePage.typeLoginCredentials(process.env.USERNAME, process.env.PASSWORD);
+  await homePage.typeLoginCredentials(process.env.TEST_USERNAME, process.env.TEST_PASSWORD);
   await inventoryPage.verifySecondaryHeader();
 });
 

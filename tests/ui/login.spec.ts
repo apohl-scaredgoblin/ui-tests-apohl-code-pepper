@@ -16,7 +16,7 @@ test.describe('@userLogin Verify logging in', () => {
     inventoryPage,
   }) => {
     await test.step('Type credentials', async () => {
-      await homePage.typeLoginCredentials(process.env.USERNAME, process.env.PASSWORD);
+      await homePage.typeLoginCredentials(process.env.TEST_USERNAME, process.env.TEST_PASSWORD);
       await inventoryPage.verifySecondaryHeader();
     });
   });
