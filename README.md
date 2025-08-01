@@ -1,4 +1,4 @@
-# UI Tests Apohl Code Pepper
+# UI Tests for Code & Pepper by Apohl
 
 This project contains UI tests for `Swag Labs` application.
 
@@ -6,11 +6,7 @@ The tests are written in TypeScript and Playwright for browser automation
 
 ## Prerequisite
 
-- Make sure you Node installed
-
-## Setup
-
-First, clone the project from the repository:
+- Make sure you have Node installed
 
 ## Install
 
@@ -21,11 +17,12 @@ First, clone the project from the repository:
 By default application will run on `https://www.saucedemo.com/`
 
 ## Environment Variables
- 
-In order to run the tests, you need to set some required environment variables. You need to define these variables in 
-a `.env` file. Sample.env in the project, the data in the sample are those which are used in the tests. As these data 
-are public, They are provided in the sample file. But .env has been added to .gitignore as the credentials should not be 
-pushed to the repository
+
+To run tests, necessary environment variables must be set. You should define these variables in a `.env` file. You can use the `Sample.env` file present in the project as a boilerplate. 
+Please remove the Sample prefix,  there is no need to modify the values.
+The data within the file are public for simplicity. However, in real-world practice, 
+this file contains sensitive credentials and should not be included in version control.
+Therefore, the `.env `file has been added to .gitignore to prevent accidental pushes to the repository.
 
 ```
 BASE_URL:https://www.saucedemo.com/
