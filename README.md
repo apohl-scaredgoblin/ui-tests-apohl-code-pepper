@@ -32,11 +32,15 @@ PASSWORD='secret_sauce'
 
 ## Run all tests in Playwright 
 
+Run this command to run all tests parallel:
 - `npx playwright test`
+
+However, if you prefer to run the tests sequentially, without parallelization, use the following command instead:
 - `npx playwright test --workers=1 --project=UITests`
 
 ## Run chosen tests in Playwright
 
+Run these commands if you want to run only chosen set of tests:
 - `npx playwright test --grep @userLogin --workers=1 --project=UITests`
 - `npx playwright test --grep @order --workers=1 --project=UITests`
 - `npx playwright test --grep @userActions --workers=1 --project=UITests`
