@@ -2,7 +2,7 @@ import { test } from "@fixtures//basePage";
 import { ProductDescription } from "../../test-data/productDescription";
 import process from "process";
 
-test.beforeEach(async ({ homePage, inventoryPage, context }) => {
+test.beforeEach(async ({ homePage, inventoryPage }) => {
   await homePage.navigateToURL();
   await homePage.typeLoginCredentials(process.env.TEST_USERNAME, process.env.TEST_PASSWORD);
   await inventoryPage.verifySecondaryHeader();
@@ -29,7 +29,7 @@ test.describe('@userActions Verify user actions in the app', () => {
   });
 
   test('Verify if user is able to add/remove product when he is on Inventory page | TC3-A', async ({
-    inventoryPage, cartPage,
+    inventoryPage,
   }) => {
     await test.step('Add Backpack to the cart', async () => {
       await inventoryPage.addBackpackToCart();

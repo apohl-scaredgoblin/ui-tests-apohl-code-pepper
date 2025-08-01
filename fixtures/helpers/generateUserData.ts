@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 
 export function generateRandomCredentials() {
     const username = faker.internet.username().substring(0);
-    const password = faker.internet.password(false, /[A-Za-z0-9]/);
+    const password = faker.internet.password({ pattern: /[A-Za-z0-9]/, memorable: false});
 
     return { username, password };
 }
